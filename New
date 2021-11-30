@@ -1,0 +1,26 @@
+def Job_profile(name):
+    print("Hello " + name +",Welcome to the IT tech support profile ")
+def Join_date(dates):
+    print("The Date of Joining is " +dates)
+def Leave_taken(days):
+    print("The Number of leaves taken is "+days)
+def Productivity(Time_spent , No_days):
+    return Time_spent*No_days
+Productivity1 = Productivity (5,6)
+Productivity2 = Productivity (6,7)
+sum = Productivity1 + Productivity2 
+Job_profile("Jinit")
+Join_date("23 rd August")
+Leave_taken("0")
+name=("Jinit")
+print("The Productivity for 1st Month of " +str(name) + " is " +str(Productivity1))
+print("The Sum of Productivity is " +str(name) + " is " + str(sum) )
+def Time_left(Seconds):
+    Hours = Seconds//3600
+    Minutes = (Seconds-Hours*3600)//60
+    Seconds = (Seconds-Hours*3600-Minutes*60)
+    return Hours,Minutes,Seconds
+
+Hours,Minutes,Seconds=Time_left(5000)
+print("There is " + str(Hours) +" Hour left and " +str(Minutes)+ 
+" Minutes left  "+str(Seconds)+ " Seconds Left For todays work to complete")
